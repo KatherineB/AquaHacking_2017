@@ -1,0 +1,8 @@
+Colours:
+
+#ed1c24  red
+#ff7f27  orange
+#fff200  yellow
+#00ff00  green
+#00a2e8  blue
+#a349a4  purple

@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Fertilizer Burn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="aquaFB.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-div">
+  <!--  <img class="readings-image" src="readings2.png">-->
+	<div class="top-strip">
+		 <div class="main-heading">Fertilizer Distribution Readings</div>
+		 <div class="top-strip-text" id="title">Farm 1</div>
+		 <div class="date-box">
+			 <div class="top-strip-text"> <span id="start-date">June 1, 2017</span> - <span id="end-date">June 30, 2017</span>
+		     </div>			 
+		 </div>
+	</div>
+	<div class="legend-box" id="legend-box">
+	<div class="x-close" onClick="hideLegend()">&times;</div>
+	<table class="legend">
+	<tr>
+	<th colspan="2"> Legend</th>
+	</tr>
+	<tr>
+	<td class="key" bgcolor="#ed1c24"></td><td>Very High</td>
+	</tr>
+	<tr>
+	<td class="key" bgcolor="#ff7f27"></td><td>High</td>
+	</tr>
+	<tr>
+	<td class="key" bgcolor="#fff200"></td><td>Medium</td>
+	</tr>
+	<tr>
+	<td class="key" bgcolor="#00ff00"></td><td>Low</td>
+	</tr>
+	<tr>
+	<td class="key" bgcolor="#00a2e8"></td><td>Very Low</td>
+	</tr>
+	<tr>
+	<td class="key" bgcolor="#a349a4"></td><td>None</td>
+	</tr>
+
+	</table>
+	</div>
+	<div class="bottom-strip">
+		<input class="legend-button" type="button" value="Legnd" onClick="displayLegend()">
+	</div>
+
+</div>
+
+	<script>
+	function displayLegend(){
+	  // document.getElementById("legend-box").style.display = "block";
+	  // document.getElementsByTagName(body).style.background = "url('readings2p3.png'),url('background2.png')";
+	document.getElementsByTagName("body")[0].style.backgroundImage = "url('readings2p3.png'),url('background2.png')";
+	}
+	function hideLegend(){
+	   document.getElementById("legend-box").style.display = "none";
+	}
+	</script>
+
+	</body>

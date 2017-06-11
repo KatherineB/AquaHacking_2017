@@ -1,0 +1,89 @@
+/* CCS for aquaFB */
+@media (min-width: 280px) {body {font-size: 12px;} }
+@media (min-width: 320px) {body {font-size: 14px;} }
+@media (min-width: 423px) {body {font-size: 17px;} }
+@media (min-width: 526px) {body {font-size: 20px;} }
+@media (min-width: 768px) {body {font-size: 23px;} }
+@media (min-width: 992px) {body {font-size: 28px;} }
+@media (min-width: 1200px) {body {font-size: 34px;} }
+
+body{
+   text-align: center;
+   font-family: arial,sans-serif;
+   background: url("readings2.png"),url("background2.png"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   background-position: center center;
+   margin: 0;
+
+}
+.main-div{
+ /*background: url("readings2.png");*/
+/*background: url("readings2.png"),url("background2.png"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+   background-position: center center;*/
+}
+.readings-image{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.top-strip{
+	height: 2.7em;
+	width: 100%;
+	background-color: #000000;
+	border-style: none;
+	color: #ffffff;
+}
+.main-heading{
+	font-size: 1em;
+	padding-top: 0.3em;
+}
+.top-strip-text{
+	font-size: 0.7em;
+	float:left;
+	margin-left: 1em;
+}
+.date-box{
+	float: right;
+	margin-right: 1em;
+}
+.bottom-strip{
+	height: 2.7em;
+	width: 100%;
+	background-color: #000000;
+	border-style: none;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+}
+.legend-box{
+	display: none;
+	background-color: #ffffff;
+    padding: 0.2em;
+	float: left;
+	margin-left: 1em;
+	position: absolute;
+	bottom: 3em;
+	color: #000000;
+}
+.legend{
+	padding: 0.5em;
+}
+.x-close{
+	text-align:right;
+	cursor: pointer;
+}
+.key{
+	width: 1em;
+	height: 1em;
+}
+.legend-button{
+	cursor: pointer;
+	width: 6em;
+	height: 1.75em;
+	font-size: 0.8em;
+}
