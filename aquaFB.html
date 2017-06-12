@@ -6,7 +6,6 @@
 </head>
 <body>
 <div class="main-div">
-  <!--  <img class="readings-image" src="readings2.png">-->
 	<div class="top-strip">
 		 <div class="main-heading">Fertilizer Distribution Readings</div>
 		 <div class="top-strip-text" id="title">Farm 1</div>
@@ -43,19 +42,47 @@
 	</table>
 	</div>
 	<div class="bottom-strip">
-		<input class="legend-button" type="button" value="Legnd" onClick="displayLegend()">
+	    <div class="legend-button-box">
+		    <input class="legend-button" type="button" value="Legnd" onClick="displayLegend()">
+	    </div>
+		<div class="opacity-box">
+		    <div class="opacity-title">Opacity</div>
+			<div class="opacity-radio">
+				 <input class="opacity-radio-btn" type="radio" name="opacity" value="100">100%
+			</div>
+			<div class="opacity-radio">
+				  <input class="opacity-radio-btn" type="radio" name="opacity" value="70">70%
+			</div>
+			<div class="opacity-radio">
+				  <input class="opacity-radio-btn" type="radio" name="opacity" value="40">40%
+			</div>
+			<div style="clear:both"></div>			
+	    </div>
+		<div class="zoom-box">
+		    <div class="zoom-title">Zoom</div>
+			<div class="zoom">
+				 <input class="zoom-btn" type="button"  value="+">
+			</div>
+			<div class="zomm">
+				  <input class="zoom-btn" type="button" value="-">
+			</div>
+			<div style="clear:both"></div>			
+	    </div>
 	</div>
 
 </div>
 
 	<script>
 	function displayLegend(){
-	  // document.getElementById("legend-box").style.display = "block";
-	  // document.getElementsByTagName(body).style.background = "url('readings2p3.png'),url('background2.png')";
-	document.getElementsByTagName("body")[0].style.backgroundImage = "url('readings2p3.png'),url('background2.png')";
+	   document.getElementById("legend-box").style.display = "block";
 	}
 	function hideLegend(){
 	   document.getElementById("legend-box").style.display = "none";
+	}
+	function changeOpacity(){
+	  // document.getElementById("legend-box").style.display = "block";
+	  // document.getElementsByTagName(body).style.background = "url('readings2p3.png'),url('background2.png')";
+	document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2p3.png'),url('img/background2.png')";
 	}
 	</script>
 
