@@ -16,10 +16,6 @@ body{
    text-align: center;
    background-position: center center;
    margin: 0;
-
-}
-.main-div{
-
 }
 .readings-image{
 	position: absolute;
@@ -55,7 +51,7 @@ body{
 	position: absolute;
 	bottom: 0;
 	font-size: 0.7em;
-        padding-top: 0.5em;
+    padding-top: 0.5em;
 }
 .legend-box{
 	display: none;
@@ -81,10 +77,10 @@ body{
 	height: 1em;
 }
 .legend-button-box{
-        float: left;
+    float: left;
 	display: inline-block;
 	padding: 0.5em;
-        vertical-align: top;
+    vertical-align: top;
 }
 .legend-button{
 	cursor: pointer;
@@ -95,7 +91,7 @@ body{
 .opacity-box{
 	display: inline-block;
 	width: 16em;
-        vertical-align: top;
+    vertical-align: top;
 }
 .opacity-radio{
 	float: left;
@@ -104,8 +100,8 @@ body{
 .zoom-box{
 	display: inline-block;
 	width: 6em;
-        vertical-align: top;
-        float: right;
+    vertical-align: top;
+    float: right;
 }
 .zoom{
 	float: left;
@@ -114,7 +110,7 @@ body{
 .zoom-btn{
 	width: 1.5em;
 	border-radius: 1.5em;
-        font-weight: bold;
-        font-size: 0.8em;
-        text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
 }
