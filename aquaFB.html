@@ -48,23 +48,23 @@
 		<div class="opacity-box">
 		    <div class="opacity-title">Opacity</div>
 			<div class="opacity-radio">
-				 <input class="opacity-radio-btn" type="radio" name="opacity" value="100">100%
+				 <input class="opacity-radio-btn" type="radio" name="opacity" value="100" onClick="changeOpacity(100)">100%
 			</div>
 			<div class="opacity-radio">
-				  <input class="opacity-radio-btn" type="radio" name="opacity" value="70">70%
+				  <input class="opacity-radio-btn" type="radio" name="opacity" value="70" onClick="changeOpacity(70)">70%
 			</div>
 			<div class="opacity-radio">
-				  <input class="opacity-radio-btn" type="radio" name="opacity" value="40">40%
+				  <input class="opacity-radio-btn" type="radio" name="opacity" value="40" onClick="changeOpacity(40)">40%
 			</div>
 			<div style="clear:both"></div>			
 	    </div>
 		<div class="zoom-box">
 		    <div class="zoom-title">Zoom</div>
 			<div class="zoom">
-				 <input class="zoom-btn" type="button"  value="+">
+				 <input class="zoom-btn" type="button"  value="+" onClick="zoomIn()">
 			</div>
 			<div class="zomm">
-				  <input class="zoom-btn" type="button" value="-">
+				  <input class="zoom-btn" type="button" value="&#8722;" onClick=zoomOut()">
 			</div>
 			<div style="clear:both"></div>			
 	    </div>
@@ -73,29 +73,30 @@
 </div>
 
 	<script>
-/*	.addEventListener('change', function() {
-   alert("event!");
-});*/
 	function displayLegend(){
 	   document.getElementById("legend-box").style.display = "block";
 	}
 	function hideLegend(){
 	   document.getElementById("legend-box").style.display = "none";
 	}
-	function changeOpacity(){
-	   var opacity;
-	    alert("in opacity function");
-	  // document.getElementById("legend-box").style.display = "block";
-	  // document.getElementsByTagName(body).style.background = "url('readings2p3.png'),url('background2.png')";
-	  var opacityChosen = document.getElementsByName("opacity");
-	  for(var i = 0; i < opacityChosen.length; i++) {
-	   if(opacityChosen[i].checked == true) {
-		   opacity = opacityChosen[i].value;
-	   }
-	 }
-	 alert(opacity);
-	document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2p7.png'),url('img/background2plus.png')";
+	function changeOpacity(percent){
+           switch(percent) {
+              case 100:
+                 document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2.png'),url('img/background2plus.png')";
+                 break;
+              case 70:
+                 document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2p7.png'),url('img/background2plus.png')";
+                 break;
+             case 40:
+                 document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2p4.png'),url('img/background2plus.png')";
+                 break;
+             default:
+                 alert("Nothing matched in switch statement")
+           }
 	}
+        function zoomIn(){
+            // document.getElementsByTagName("body")[0].style.transform = "scale(2)";
+        }
 	</script>
 
 	</body>

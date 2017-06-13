@@ -19,12 +19,7 @@ body{
 
 }
 .main-div{
- /*background: url("readings2.png");*/
-/*background: url("readings2.png"),url("background2.png"); 
-   background-repeat: no-repeat;
-   background-size: cover;
-   text-align: center;
-   background-position: center center;*/
+
 }
 .readings-image{
 	position: absolute;
@@ -52,7 +47,7 @@ body{
 	margin-right: 1em;
 }
 .bottom-strip{
-	height: 4em;
+	height: 3em;
 	width: 100%;
 	background-color: #000000;
 	border-style: none;
@@ -60,6 +55,7 @@ body{
 	position: absolute;
 	bottom: 0;
 	font-size: 0.7em;
+        padding-top: 0.5em;
 }
 .legend-box{
 	display: none;
@@ -85,9 +81,10 @@ body{
 	height: 1em;
 }
 .legend-button-box{
+        float: left;
 	display: inline-block;
-	margin-right: 8em;
 	padding: 0.5em;
+        vertical-align: top;
 }
 .legend-button{
 	cursor: pointer;
@@ -98,6 +95,7 @@ body{
 .opacity-box{
 	display: inline-block;
 	width: 16em;
+        vertical-align: top;
 }
 .opacity-radio{
 	float: left;
@@ -106,6 +104,8 @@ body{
 .zoom-box{
 	display: inline-block;
 	width: 6em;
+        vertical-align: top;
+        float: right;
 }
 .zoom{
 	float: left;
@@ -114,4 +114,7 @@ body{
 .zoom-btn{
 	width: 1.5em;
 	border-radius: 1.5em;
+        font-weight: bold;
+        font-size: 0.8em;
+        text-align: center;
 }
