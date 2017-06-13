@@ -73,6 +73,9 @@
 </div>
 
 	<script>
+/*	.addEventListener('change', function() {
+   alert("event!");
+});*/
 	function displayLegend(){
 	   document.getElementById("legend-box").style.display = "block";
 	}
@@ -80,9 +83,18 @@
 	   document.getElementById("legend-box").style.display = "none";
 	}
 	function changeOpacity(){
+	   var opacity;
+	    alert("in opacity function");
 	  // document.getElementById("legend-box").style.display = "block";
 	  // document.getElementsByTagName(body).style.background = "url('readings2p3.png'),url('background2.png')";
-	document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2p3.png'),url('img/background2.png')";
+	  var opacityChosen = document.getElementsByName("opacity");
+	  for(var i = 0; i < opacityChosen.length; i++) {
+	   if(opacityChosen[i].checked == true) {
+		   opacity = opacityChosen[i].value;
+	   }
+	 }
+	 alert(opacity);
+	document.getElementsByTagName("body")[0].style.backgroundImage = "url('img/readings2p7.png'),url('img/background2plus.png')";
 	}
 	</script>
 

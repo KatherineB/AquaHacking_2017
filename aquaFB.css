@@ -10,7 +10,7 @@
 body{
    text-align: center;
    font-family: arial,sans-serif;
-   background: url("img/readings2.png"),url("img/background2.png"); 
+   background: url("img/readings2.png"),url("img/background2plus.png"); 
    background-repeat: no-repeat;
    background-size: cover;
    text-align: center;
@@ -52,7 +52,7 @@ body{
 	margin-right: 1em;
 }
 .bottom-strip{
-	height: 2.9em;
+	height: 4em;
 	width: 100%;
 	background-color: #000000;
 	border-style: none;
@@ -105,9 +105,13 @@ body{
 }
 .zoom-box{
 	display: inline-block;
-	width: 11em;
+	width: 6em;
 }
 .zoom{
 	float: left;
-	width: 5em;
+	width: 2.5em;
+}
+.zoom-btn{
+	width: 1.5em;
+	border-radius: 1.5em;
 }
