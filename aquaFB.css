@@ -13,14 +13,10 @@ body{
    background: url("img/readings2.png"),url("img/background2plus.png"); 
    background-repeat: no-repeat;
    background-size: cover;
+  /*  background-size: 120%;*/
    text-align: center;
    background-position: center center;
    margin: 0;
-}
-.readings-image{
-	position: absolute;
-	width: 100%;
-	height: 100%;
 }
 .top-strip{
 	height: 2.7em;

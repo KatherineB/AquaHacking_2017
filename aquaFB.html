@@ -71,6 +71,8 @@
 </div>
 
 <script>
+var zoomLevel = 100;
+
 function displayLegend(){
    document.getElementById("legend-box").style.display = "block";
 }
@@ -93,7 +95,16 @@ function changeOpacity(percent){
    }
 }
 function zoomIn(){
+         zoomLevel = zoomLevel+=20;
+		 var zoom = zoomLevel + "%";
 		// document.getElementsByTagName("body")[0].style.transform = "scale(2)";
+		document.getElementsByTagName("body")[0].style.backgroundSize = zoom;
+}
+function zoomOut(){
+         zoomLevel = zoomLevel-=20;
+		 var zoom = zoomLevel + "%";
+		// document.getElementsByTagName("body")[0].style.transform = "scale(1)";
+		document.getElementsByTagName("body")[0].style.backgroundSize = zoom;
 }
 </script>
 
