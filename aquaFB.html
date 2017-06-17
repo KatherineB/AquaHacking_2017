@@ -62,8 +62,11 @@
 			<div class="zoom">
 				 <input class="zoom-btn" type="button"  value="+" onClick="zoomIn()">
 			</div>
-			<div class="zomm">
+			<div class="zoom">
 				  <input class="zoom-btn" type="button" value="&#8722;" onClick="zoomOut()">
+			</div>
+			<div class="zoom">
+				  <input class="zoom-btn" type="button" value="100%" onClick="resetTo100()">
 			</div>
 			<div style="clear:both"></div>			
 	    </div>
@@ -95,16 +98,20 @@ function changeOpacity(percent){
    }
 }
 function zoomIn(){
-         zoomLevel = zoomLevel+=20;
+		 zoomLevel = zoomLevel+=20;
 		 var zoom = zoomLevel + "%";
-		// document.getElementsByTagName("body")[0].style.transform = "scale(2)";
-		document.getElementsByTagName("body")[0].style.backgroundSize = zoom;
+		 document.getElementsByTagName("body")[0].style.backgroundSize = zoom;
 }
 function zoomOut(){
-         zoomLevel = zoomLevel-=20;
-		 var zoom = zoomLevel + "%";
-		// document.getElementsByTagName("body")[0].style.transform = "scale(1)";
-		document.getElementsByTagName("body")[0].style.backgroundSize = zoom;
+         if(zoomLevel > 100){
+			 zoomLevel = zoomLevel-=20;
+			 var zoom = zoomLevel + "%";
+			 document.getElementsByTagName("body")[0].style.backgroundSize = zoom;
+		 }
+}
+function resetTo100(){
+         zoomLevel = 100;
+		 document.getElementsByTagName("body")[0].style.backgroundSize = "100%";
 }
 </script>
 

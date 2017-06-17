@@ -39,7 +39,7 @@ body{
 	margin-right: 1em;
 }
 .bottom-strip{
-	height: 3em;
+	height: 3.2em;
 	width: 100%;
 	background-color: #000000;
 	border-style: none;
@@ -58,6 +58,7 @@ body{
 	position: absolute;
 	bottom: 3em;
 	color: #000000;
+	line-height: 0.5;
 }
 .legend{
 	padding-left: 0.5em;
@@ -84,6 +85,9 @@ body{
 	height: 1.75em;
 	font-size: 1em;
 }
+.opacity-title{
+	padding-bottom: 0.2em;
+}
 .opacity-box{
 	display: inline-block;
 	width: 16em;
@@ -93,20 +97,27 @@ body{
 	float: left;
 	width: 5em;
 }
+.zoom-title{
+	/*padding-top: 0.1em;*/
+	padding-bottom: 0.3em;
+}
 .zoom-box{
 	display: inline-block;
-	width: 6em;
+	width: 12em;
     vertical-align: top;
     float: right;
 }
 .zoom{
 	float: left;
-	width: 2.5em;
+	display: inline-block;
+	width: 4em;
 }
 .zoom-btn{
-	width: 1.5em;
-	border-radius: 1.5em;
+	width: 4em;
+	height: 1.3em;
+	border-radius: 1.3em;
     font-weight: bold;
     font-size: 0.8em;
     text-align: center;
+	display: inline-block;
 }
