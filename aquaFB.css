@@ -13,7 +13,6 @@ body{
    background: url("img/readings2.png"),url("img/background2plus.png"); 
    background-repeat: no-repeat;
    background-size: cover;
-  /*  background-size: 120%;*/
    text-align: center;
    background-position: center center;
    margin: 0;
@@ -39,15 +38,12 @@ body{
 	margin-right: 1em;
 }
 .bottom-strip{
-	height: 3.2em;
 	width: 100%;
 	background-color: #000000;
 	border-style: none;
 	color: #ffffff;
 	position: absolute;
 	bottom: 0;
-	font-size: 0.7em;
-    padding-top: 0.5em;
 }
 .legend-box{
 	display: none;
@@ -65,7 +61,7 @@ body{
 	padding-right: 0.5em;
 }
 .x-close{
-	text-align:right;
+	text-align: right;
 	cursor: pointer;
 	height: 0.8em;
 }
@@ -90,27 +86,18 @@ body{
 }
 .opacity-box{
 	display: inline-block;
-	width: 16em;
     vertical-align: top;
 }
 .opacity-radio{
-	float: left;
 	width: 5em;
 }
 .zoom-title{
-	/*padding-top: 0.1em;*/
 	padding-bottom: 0.3em;
 }
 .zoom-box{
 	display: inline-block;
-	width: 12em;
     vertical-align: top;
     float: right;
-}
-.zoom{
-	float: left;
-	display: inline-block;
-	width: 4em;
 }
 .zoom-btn{
 	width: 4em;
@@ -120,4 +107,51 @@ body{
     font-size: 0.8em;
     text-align: center;
 	display: inline-block;
+	padding: 0;
+}
+@media (max-width: 526px){
+	.bottom-strip{
+		height: 10em;
+		font-size: 0.7em;
+		padding-top: 0.5em;
+	}
+	.opacity-box{
+		width: 4em;
+	}
+	.opacity-title{
+		text-align: left;
+	}
+	.opacity-radio{
+		text-align: left;
+	}
+	.opacity-radio-btn{
+		margin-left: 0em;
+		margin-top: 0.8em;
+	}
+	.zoom-box{
+		width: 4em; 
+		margin-right: 1em;
+	}
+	.zoom-btn{
+		margin-top: 1.2em;
+	}
+}
+@media (min-width: 526px){
+	.bottom-strip{
+		height: 3.2em;
+		font-size: 0.7em;
+		padding-top: 0.5em;
+	}
+	.opacity-box{
+		width: 16em;
+	}
+	.opacity-radio{
+		float: left;
+		display: inline;
+	}
+	.zoom{
+		width: 4em;
+		float: left;
+		display: inline-block;
+	}
 }
