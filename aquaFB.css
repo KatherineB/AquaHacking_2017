@@ -7,7 +7,11 @@
 @media (min-width: 992px) {body {font-size: 28px;} }
 @media (min-width: 1200px) {body {font-size: 34px;} }
 
+html{
+	height: 100%;
+}
 body{
+   height: 100%;
    text-align: center;
    font-family: arial,sans-serif;
    background: url("img/readings2.png"),url("img/background2plus.png"); 
@@ -52,22 +56,30 @@ body{
 	float: left;
 	margin-left: 1em;
 	position: absolute;
-	bottom: 3em;
 	color: #000000;
 	line-height: 0.5;
 }
 .legend{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
+	text-align: left;
+	font-size: 0.8em;
+}
+.legend-title{
+	padding-bottom: 0.5em;
 }
 .x-close{
 	text-align: right;
 	cursor: pointer;
-	height: 0.8em;
+	height: 0.6em;
+    font-size: 1.2em;
 }
 .key{
 	width: 1em;
 	height: 1em;
+}
+.key-label{
+	padding-left: 0.3em;
 }
 .legend-button-box{
     float: left;
@@ -110,6 +122,9 @@ body{
 	padding: 0;
 }
 @media (max-width: 526px){
+	.legend-box{
+		bottom: 8em;
+	}
 	.bottom-strip{
 		height: 10em;
 		font-size: 0.7em;
@@ -137,6 +152,9 @@ body{
 	}
 }
 @media (min-width: 526px){
+	.legend-box{
+		bottom: 3em;
+	}
 	.bottom-strip{
 		height: 3.2em;
 		font-size: 0.7em;
